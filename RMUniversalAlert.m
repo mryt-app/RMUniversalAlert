@@ -20,8 +20,8 @@ static NSInteger const RMUniversalAlertFirstOtherButtonIndex = 2;
 
 @interface RMUniversalAlert ()
 
-@property (nonatomic) UIAlertController *alertController;
-@property (nonatomic) UIAlertView *alertView;
+@property (nonatomic, weak) UIAlertController *alertController;
+@property (nonatomic, weak) UIAlertView *alertView;
 @property (nonatomic) UIActionSheet *actionSheet;
 
 @property (nonatomic, assign) BOOL hasCancelButton;
